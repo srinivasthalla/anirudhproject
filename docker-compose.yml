@@ -19,11 +19,11 @@ services:
     ports:
       - "8002:80"
     deploy:
-      replicas: 3
+      replicas: 5
 
   datascience:
     image: srinivasthalla/practicedatascience:latest
     ports:
       - "8003:80"
     deploy:
-      replicas: 3
+      replicas: 5
