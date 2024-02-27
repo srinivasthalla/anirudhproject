@@ -1,0 +1,29 @@
+version: '3'
+services:
+  aws:
+    image: srinivasthalla/practiceaws:latest
+    ports:
+      - "8000:80"
+   deploy:
+     replicas: 3
+
+  devops:
+    image: srinivasthalla/practicedevops:latest
+    ports:
+      - "8001:80"
+    deploy:
+      replicas: 3
+
+  azure:
+    image: srinivasthalla/practiceazure:latest
+    ports:
+      - "8002:80"
+    deploy:
+      replicas: 3
+
+  datascience:
+    image: srinivasthalla/practicedatascience:latest
+    ports:
+      - "8003:80"
+    deploy:
+      replicas: 3
